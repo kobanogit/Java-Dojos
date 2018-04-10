@@ -12,6 +12,21 @@ public class MissingLetterTest {
         char expected = 'c';
         assertEquals(expected, cletter.checkMissingLetter(tabArray));
     }
+
+    @Test
+    public void testMaj(){
+        char [] tabArray = {'A', 'B', 'D'};
+        char expected = 'C';
+        assertEquals(expected, cletter.checkMissingLetter(tabArray));
+    }
+
+    @Test
+    public void testNull(){
+        char [] tabArray = null;
+        char expected = '0';
+        assertEquals(expected, cletter.checkMissingLetter(tabArray));
+    }
+
     @Test
     public void testFailBis(){
         char [] tabArray = {'a', 'b', 'd'};
