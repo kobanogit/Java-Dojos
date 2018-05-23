@@ -45,4 +45,11 @@ public class PokerHand {
     // si valeur carte n+1 = valeur carte n, bouleén 2
     // donner une valeur à chaque combinaison
 
+    public CombinationType getBestCombination() {
+
+        return null;
+    }
+
+
+
 }

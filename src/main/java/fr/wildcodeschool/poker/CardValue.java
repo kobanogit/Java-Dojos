@@ -12,6 +12,10 @@ public enum CardValue {
         this.identifier = identifier;
     }
 
+    public int getValue() {
+        return value;
+    }
+
     public static CardValue parse(char value){
         for (CardValue card: CardValue.values()) {
             if (value == card.identifier){

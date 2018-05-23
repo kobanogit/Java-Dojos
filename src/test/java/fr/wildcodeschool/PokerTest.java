@@ -3,10 +3,7 @@ package fr.wildcodeschool;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
-import fr.wildcodeschool.poker.Card;
-import fr.wildcodeschool.poker.CardSuit;
-import fr.wildcodeschool.poker.CardValue;
-import fr.wildcodeschool.poker.PokerHand;
+import fr.wildcodeschool.poker.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -38,6 +35,25 @@ public class PokerTest {
         expectedCardsList.add(card);
         assertThat(expectedCardsList, is(pokerHand.getCards()));
 
+    }
+
+    @Test
+    public void testGetCombination () {
+        PokerHand pokerHand = new PokerHand("AS AC AD AH 2D");
+        assertEquals(CombinationType.FOUR_OF_A_KIND, pokerHand.getBestCombination());
+    }
+
+    @Test
+    public void testHandConversionIntoCombinationType() {
+        PokerHand pokerHand = new PokerHand("AS AC AD AH 2D");
+        CombinationType bestCombination = CombinationType.fromPokerHand(pokerHand);
+        assertEquals(CombinationType.FOUR_OF_A_KIND, bestCombination);
+    }
+
+    @Test
+    public void testCombinationTypeMatched(){
+        PokerHand pokerHand = new PokerHand("AS AC AD AH 2D");
+        assertTrue(CombinationType.FOUR_OF_A_KIND.isMatched(pokerHand));
     }
 
 

@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d506c197-73ce-4baa-a3b8-264e99e638a6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CardValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Combinaison.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CombinationType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/PokerHand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fr/wildcodeschool/PokerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/5-PokerHand.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/5-PokerHand.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CardValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CardValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Combinaison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Combinaison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CombinationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CombinationType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/PokerHand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/PokerHand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fr/wildcodeschool/PokerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/wildcodeschool/PokerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/wildcodeschool/CalcJulien.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/wildcodeschool/CalcJulien.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/wildcodeschool/poker/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/wildcodeschool/poker/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/wildcodeschool/poker/PokerHand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/wildcodeschool/poker/PokerHand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/wildcodeschool/PokerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/fr/wildcodeschool/PokerTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,62 +25,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
-      <file leaf-file-name="5-PokerHand.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/5-PokerHand.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PokerHand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/PokerHand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1287">
-              <caret line="39" selection-start-line="39" selection-end-line="45" selection-end-column="45" />
+            <state relative-caret-position="952">
+              <caret line="40" column="4" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="45" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#137#143#0" expanded="true" />
-                <element signature="e#121#122#0" expanded="true" />
-                <element signature="e#145#146#0" expanded="true" />
-                <element signature="e#911#912#0" expanded="true" />
-                <element signature="e#939#940#0" expanded="true" />
-                <element signature="e#985#986#0" expanded="true" />
-                <element signature="e#1019#1020#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Combinaison.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Combinaison.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CombinationType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CombinationType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PokerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/fr/wildcodeschool/PokerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1216">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#213#214#0" expanded="true" />
-                <element signature="e#279#280#0" expanded="true" />
-                <element signature="e#846#852#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,30 +40,13 @@
       <file leaf-file-name="Card.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Card.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
+            <state relative-caret-position="150">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
-                <element signature="e#312#313#0" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
-                <element signature="e#381#382#0" expanded="true" />
+                <element signature="e#386#387#0" expanded="true" />
                 <element signature="e#413#414#0" expanded="true" />
-                <element signature="e#448#449#0" expanded="true" />
-                <element signature="e#476#477#0" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
-                <element signature="e#555#556#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CardSuit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CardSuit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-              <folding>
-                <element signature="e#172#173#0" expanded="true" />
-                <element signature="e#191#192#0" expanded="true" />
+                <element signature="e#1056#1057#0" expanded="true" />
+                <element signature="e#1108#1109#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,8 +55,53 @@
       <file leaf-file-name="CardValue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CardValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+            <state relative-caret-position="392">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              <folding>
+                <element signature="e#484#485#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CardSuit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CardSuit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CombinationType.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CombinationType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PokerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/fr/wildcodeschool/PokerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Combinaison.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Combinaison.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -162,13 +145,13 @@
         <option value="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/pokerCardValue.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Result.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CardSuit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CardValue.java" />
-        <option value="$PROJECT_DIR$/src/test/java/fr/wildcodeschool/PokerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Card.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Combination.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CombinationType.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/PokerHand.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Combinaison.java" />
+        <option value="$PROJECT_DIR$/src/test/java/fr/wildcodeschool/PokerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CardValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Card.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CombinationType.java" />
       </list>
     </option>
   </component>
@@ -190,7 +173,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,8 +248,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -275,6 +258,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../dojoCrazyPyramide/dojos" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -294,32 +280,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PokerTest.testHand">
+  <component name="RunManager" selected="JUnit.PokerTest.testCombinationTypeMatched">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="PokerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dojos" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.wildcodeschool.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="fr.wildcodeschool" />
-      <option name="MAIN_CLASS_NAME" value="fr.wildcodeschool.PokerTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="PokerTest.testCardParsing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dojos" />
@@ -334,6 +297,52 @@
       <option name="PACKAGE_NAME" value="fr.wildcodeschool" />
       <option name="MAIN_CLASS_NAME" value="fr.wildcodeschool.PokerTest" />
       <option name="METHOD_NAME" value="testCardParsing" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="PokerTest.testCombinationTypeMatched" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dojos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.wildcodeschool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="fr.wildcodeschool" />
+      <option name="MAIN_CLASS_NAME" value="fr.wildcodeschool.PokerTest" />
+      <option name="METHOD_NAME" value="testCombinationTypeMatched" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="PokerTest.testGetCombination" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dojos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.wildcodeschool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="fr.wildcodeschool" />
+      <option name="MAIN_CLASS_NAME" value="fr.wildcodeschool.PokerTest" />
+      <option name="METHOD_NAME" value="testGetCombination" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -367,42 +376,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestCalcJulien" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PokerTest.testHandConversionIntoCombinationType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dojos" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fr.wildcodeschool.poker.*" />
+          <option name="PATTERN" value="fr.wildcodeschool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="fr.wildcodeschool" />
-      <option name="MAIN_CLASS_NAME" value="fr.wildcodeschool.TestCalcJulien" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="TestCalcJulien.testCalcule4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dojos" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.wildcodeschool.poker.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="fr.wildcodeschool" />
-      <option name="MAIN_CLASS_NAME" value="fr.wildcodeschool.TestCalcJulien" />
-      <option name="METHOD_NAME" value="testCalcule4" />
+      <option name="MAIN_CLASS_NAME" value="fr.wildcodeschool.PokerTest" />
+      <option name="METHOD_NAME" value="testHandConversionIntoCombinationType" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -477,19 +463,19 @@
     </configuration>
     <list>
       <item itemvalue="Maven.Unnamed" />
-      <item itemvalue="JUnit.TestCalcJulien" />
-      <item itemvalue="JUnit.TestCalcJulien.testCalcule4" />
-      <item itemvalue="JUnit.PokerTest" />
       <item itemvalue="JUnit.PokerTest.testCardParsing" />
       <item itemvalue="JUnit.PokerTest.testHand" />
+      <item itemvalue="JUnit.PokerTest.testGetCombination" />
+      <item itemvalue="JUnit.PokerTest.testHandConversionIntoCombinationType" />
+      <item itemvalue="JUnit.PokerTest.testCombinationTypeMatched" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PokerTest.testCombinationTypeMatched" />
+        <item itemvalue="JUnit.PokerTest.testHandConversionIntoCombinationType" />
+        <item itemvalue="JUnit.PokerTest.testGetCombination" />
         <item itemvalue="JUnit.PokerTest.testHand" />
         <item itemvalue="JUnit.PokerTest.testCardParsing" />
-        <item itemvalue="JUnit.PokerTest" />
-        <item itemvalue="JUnit.TestCalcJulien" />
-        <item itemvalue="JUnit.TestCalcJulien.testCalcule4" />
       </list>
     </recent_temporary>
   </component>
@@ -523,15 +509,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestMaCalc - 2018.05.06 at 09h 12m 56s.xml">
-      <configuration name="TestMaCalc" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCalcJulien - 2018.05.06 at 09h 34m 54s.xml">
-      <configuration name="TestCalcJulien" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCalcJulien - 2018.05.15 at 14h 00m 10s.xml">
-      <configuration name="TestCalcJulien" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestCalcJulien - 2018.05.16 at 14h 28m 30s.xml">
       <configuration name="TestCalcJulien" configurationId="JUnit" />
     </history-entry>
@@ -553,9 +530,18 @@
     <history-entry file="PokerTest_testHand - 2018.05.16 at 17h 19m 09s.xml">
       <configuration name="PokerTest.testHand" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PokerTest_testGetCombination - 2018.05.23 at 10h 04m 16s.xml">
+      <configuration name="PokerTest.testGetCombination" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PokerTest_testHandConversionIntoCombinationType - 2018.05.23 at 10h 25m 35s.xml">
+      <configuration name="PokerTest.testHandConversionIntoCombinationType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PokerTest_testCombinationTypeMatched - 2018.05.23 at 10h 42m 06s.xml">
+      <configuration name="PokerTest.testCombinationTypeMatched" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93468000" />
+    <option name="totallyTimeSpent" value="104987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="18" width="1871" height="1062" extended-state="0" />
@@ -564,33 +550,56 @@
       <window_info anchor="right" id="PlantUML" order="6" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.3291536" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.32889345" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32991803" />
       <window_info anchor="right" id="Maven Projects" order="2" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.26854753" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.26844263" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.18003273" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.18118653" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.3291536" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.398773" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="REST Client" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.39856556" />
       <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="right" id="PlantUML" order="6" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="2" />
+      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.398773" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info id="Image Layers" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.18003273" />
+      <window_info anchor="bottom" id="Version Control" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="bottom" id="REST Client" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info id="UI Designer" order="1" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.3291536" />
+      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.26854753" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info id="Designer" order="0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -632,6 +641,16 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/wildcodeschool/PokerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/fr/wildcodeschool/TestCrazyPyramide.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -895,11 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -930,54 +944,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/pokerTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CardSuit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding>
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#191#192#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/fr/wildcodeschool/PalindromeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/fr/wildcodeschool/PokerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1216">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#846#852#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CardValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CombinationType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -988,53 +958,151 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Card.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
-          <folding>
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/PokerHand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1287">
-          <caret line="39" selection-start-line="39" selection-end-line="45" selection-end-column="45" />
+        <state relative-caret-position="952">
+          <caret line="40" column="4" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="45" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#137#143#0" expanded="true" />
-            <element signature="e#121#122#0" expanded="true" />
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1019#1020#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Combinaison.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        <state relative-caret-position="390">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#1056#1057#0" expanded="true" />
+            <element signature="e#1108#1109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/wildcodeschool/PokerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CardSuit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CardValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="e#484#485#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/poker/CombinationType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>dojos</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

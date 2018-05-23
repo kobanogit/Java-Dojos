@@ -10,7 +10,7 @@ public class Combinaison {
     // donner une valeur à chaque combinaison
     private PokerHand hand;
 
-    public Combinaison(hand){
+    public Combinaison(PokerHand hand){
 
     }
 

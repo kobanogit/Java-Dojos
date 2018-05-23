@@ -1,6 +1,6 @@
 package fr.wildcodeschool.poker;
 
-public class Card {
+public class Card implements Comparable<Card> {
 
     private CardSuit suit;
     private CardValue value;
@@ -41,5 +41,10 @@ public class Card {
         else {
             return false;
         }
+    }
+
+    @Override
+    public int compareTo(Card other) {
+        return other.getValue().getValue() - getValue().getValue();
     }
 }
