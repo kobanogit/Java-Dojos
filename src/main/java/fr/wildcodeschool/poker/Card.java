@@ -47,4 +47,8 @@ public class Card implements Comparable<Card> {
     public int compareTo(Card other) {
         return other.getValue().getValue() - getValue().getValue();
     }
+
+    public String toString() {
+        return this.getValue().name() + this.suit.name();
+    }
 }

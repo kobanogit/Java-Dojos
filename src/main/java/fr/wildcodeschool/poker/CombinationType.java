@@ -1,26 +1,24 @@
 package fr.wildcodeschool.poker;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
-public enum CombinationType {
+public enum CombinationType implements Comparable<CombinationType> {
+
     HIGH_HAND(1, false, false),
-    PAIR(2, false, new Integer[]{2},false),
-    TWO_PAIR(3,false, new Integer[]{2,2},false ),
-    THREE_OF_A_KIND(4,false, new Integer[]{3},false),
-    STRAIGHT(5,false,true),
-    FLUSH(6,true,false),
-    FULL_HOUSE(7,false,new Integer[]{3,2},false),
-    FOUR_OF_A_KIND(8,false,new Integer[]{4},false),
+    PAIR(2, false, new Integer[]{2}, false),
+    TWO_PAIR(3, false, new Integer[]{2, 2}, false),
+    THREE_OF_A_KIND(4, false, new Integer[]{3}, false),
+    STRAIGHT(5, false, true),
+    FLUSH(6, true, false),
+    FULL_HOUSE(7, false, new Integer[]{3, 2}, false),
+    FOUR_OF_A_KIND(8, false, new Integer[]{4}, false),
     STRAIGHT_FLUSH(9, true, true),
     ROYAL_FLUSH(10, true, true);
 
     private int value = 0;
     private boolean sameSuit;
     private List<Integer> sameValues;
-    private boolean sequenceValue ;
+    private boolean sequenceValue;
 
 
     CombinationType(int value, boolean sameSuit, boolean sequenceValue) {
@@ -34,30 +32,43 @@ public enum CombinationType {
         this.sequenceValue = sequenceValue;
     }
 
-    public static CombinationType fromPokerHand(PokerHand pokerHand){
-        // commencer par chercher les combinaison les plus fortes
-        // tester les couleurs
-        // trier les cartes de la main de la plus haute valeur à la plus basse
-        // si toutes ont la même couleur
-            // comparer les valeurs
-        for (Card currentCard : pokerHand.getCards()) {
-
+    public static CombinationType fromPokerHand(PokerHand hand) {
+        List<CombinationType> allCombinations = Arrays.asList(CombinationType.values());
+        //on trie les combinaisons par ordre de valeur
+        //pour que le premier match soit la meilleure des combinaisons
+        Collections.sort(allCombinations, new CombinationTypeComparator());
+        Collections.reverse(allCombinations);
+        CombinationType bestCombination = null;
+        int i = 0;
+        boolean matched = false;
+        while (bestCombination == null && i < (allCombinations.size() - 1) ){
+            if (allCombinations.get(i).isMatched(hand)) {
+                bestCombination = allCombinations.get(i);
+            }
+            i++;
         }
-
-        return null;
+        return bestCombination;
     }
 
-    public boolean isMatched(PokerHand hand){
-
-        return false;
+    public boolean isMatched(PokerHand hand) {
+        boolean match = true;
+        if (this.isSameSuit() && !this.isSameSuit(hand)) {
+            match = false;
+        } else if (this.isSequenceValue() && !isSequence(hand)) {
+            match = false;
+        } else if (this.sameValues != null && !this.sameValues.isEmpty() && !isSameValue(hand)) {
+            match = false;
+        }
+        return match;
     }
+
 
     public boolean isSameSuit(PokerHand hand) {
         CardSuit matchingSuit = null;
         for (Card currentCard : hand.getCards()) {
-            if (matchingSuit == null){
+            if (matchingSuit == null) {
                 matchingSuit = currentCard.getSuit();
-            } else if ( ! matchingSuit.equals(currentCard.getSuit()) ){
+            } else if (!matchingSuit.equals(currentCard.getSuit())) {
                 return false;
             }
         }
@@ -65,28 +76,111 @@ public enum CombinationType {
     }
 
     public boolean isSameValue(PokerHand hand) {
-        // On trie les cartes par valeur pour simplifier la comparaison
-        List<Card> sortedCards = new ArrayList<>(hand.getCards());
-        Collections.sort(sortedCards);
-        for (int nbIdenticalCards: this.sameValues)
-        {
-            int counter = 1;
-            CardValue previousCardValue = null;
-            for (int i = 0 ; i < sortedCards.size() ; i++) {
-                if (sortedCards.get(i).getValue().equals(previousCardValue) ) {
-                            counter++;
-                            if(counter == nbIdenticalCards){
-                                return true;
-                            }
-                }else{
-                    counter = 1;
-                }
-                previousCardValue = sortedCards.get(i).getValue();
+        return isSameValue(hand.getCards());
+    }
 
+    public boolean isSameValue(List<Card> cards) {
+        List<List<Card>> allSameCards = getSameValueCards(cards);
+        List<Integer> multiVals = new ArrayList<>();
+        for (List<Card> sameCards: allSameCards) {
+            multiVals.add(sameCards.size());
+        }
+
+        List<Integer> sortedSameValues = new ArrayList(this.sameValues);
+        Collections.sort(sortedSameValues);
+        Collections.sort(multiVals);
+        boolean sameValsFound = false;
+        if (multiVals.size() == sortedSameValues.size()) {
+            for (int i= 0; i < multiVals.size(); i++) {
+                if (multiVals.get(i).equals(sortedSameValues.get(i))) {
+                    sameValsFound = true;
+                } else {
+                    sameValsFound = false;
+                    break;
+                }
             }
         }
 
+        return sameValsFound;
+    }
 
-        return false;
+
+    /**
+     * Renvoie les listes de cartes de même valeur
+     * @param cards
+     * @return
+     */
+    public static List<List<Card>> getSameValueCards(List<Card> cards) {
+        List<List<Card>> allSameCards = new ArrayList<>();
+
+        // On trie les cartes par valeur pour simplifier la comparaison
+        List<Card> sortedCards = new ArrayList<>(cards);
+        Collections.sort(sortedCards);
+
+        CardValue previousCardValue = null;
+        int nbSameValues = 1;
+        List<Card> sameVals = new ArrayList<>();
+        for (Card card: sortedCards) {
+            if (!card.getValue().equals(previousCardValue)) {
+                if (sameVals.size() > 1) {
+                    allSameCards.add(sameVals);
+                }
+                sameVals = new ArrayList<>();
+                nbSameValues = 1;
+            }
+            sameVals.add(card);
+            previousCardValue = card.getValue();
+        }
+
+        if (sameVals.size() > 1) {
+            allSameCards.add(sameVals);
+        }
+        return allSameCards;
+    }
+
+    public static boolean isSequence(PokerHand hand) {
+        return isSequence(hand.getCards());
+    }
+
+    public static boolean isSequence(List<Card> cards) {
+        boolean isSeq = false;
+        List<Card> sortedCards = new ArrayList<>(cards);
+        Collections.sort(sortedCards);
+        CardValue previousCardValue = null;
+        for (Card card: cards) {
+            if (previousCardValue != null) {
+                isSeq = card.getValue().follows(previousCardValue);
+                if (!isSeq) {
+                    break;
+                }
+            }
+            previousCardValue = card.getValue();
+        }
+        return isSeq;
+    }
+
+
+    public int getValue() {
+        return value;
+    }
+
+    public boolean isSameSuit() {
+        return sameSuit;
+    }
+
+    public List<Integer> getSameValues() {
+        return sameValues;
+    }
+
+    public boolean isSequenceValue() {
+        return sequenceValue;
+    }
+
+    /**
+     * Détermine si la combinaison courante est basée sur des valeurs de cartes répétées
+     * @return
+     */
+    public boolean isSameValueBased() {
+        return this.getSameValues() != null && !this.getSameValues().isEmpty();
     }
 }

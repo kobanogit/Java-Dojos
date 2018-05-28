@@ -46,8 +46,7 @@ public class PokerHand {
     // donner une valeur à chaque combinaison
 
     public CombinationType getBestCombination() {
-
-        return null;
+        return CombinationType.fromPokerHand(this);
     }
 
 

@@ -16,6 +16,11 @@ public enum CardValue {
         return value;
     }
 
+
+    public boolean follows(CardValue val) {
+        return val != null && this.getValue() == val.getValue() + 1;
+    }
+
     public static CardValue parse(char value){
         for (CardValue card: CardValue.values()) {
             if (value == card.identifier){

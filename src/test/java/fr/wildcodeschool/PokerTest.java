@@ -57,4 +57,30 @@ public class PokerTest {
     }
 
 
+    @Test
+    public void testIsSameValueCombinationType() {
+        PokerHand pokerHand = new PokerHand("AS AC 3D KH KD");
+        assertTrue(CombinationType.TWO_PAIR.isSameValue(pokerHand));
+    }
+
+
+    @Test
+    public void testIsNotSameValueCombinationType() {
+        PokerHand pokerHand = new PokerHand("AS AC AD KH KD");
+        assertFalse(CombinationType.TWO_PAIR.isSameValue(pokerHand));
+    }
+
+
+    @Test
+    public void testIsSequence() {
+        PokerHand pokerHand = new PokerHand("2S 3C 4D 5H 6D");
+        assertTrue(CombinationType.isSequence(pokerHand));
+    }
+
+    @Test
+    public void testIsNotSequence() {
+        PokerHand pokerHand = new PokerHand("2S 3C 4D KH 6D");
+        assertFalse(CombinationType.isSequence(pokerHand));
+    }
+
 }
