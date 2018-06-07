@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: fr.wildcodeschool.MissingLetterTest
--------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.088 sec <<< FAILURE! - in fr.wildcodeschool.MissingLetterTest
-testNull()  Time elapsed: 0.039 sec  <<< ERROR!
-java.lang.NullPointerException
-	at fr.wildcodeschool.MissingLetterTest.testNull(MissingLetterTest.java:27)
-

@@ -2,7 +2,9 @@ package fr.wildcodeschool.poker;
 
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class PokerHand {
 
@@ -49,6 +51,40 @@ public class PokerHand {
         return CombinationType.fromPokerHand(this);
     }
 
+    public List<Card> getKicker() {
+        Combination combination = new Combination(this);
+        List<Card> combinationCards = combination.getCards();
+        return getCards().stream()
+                .filter(c -> !combinationCards.contains(c))
+                .collect(Collectors.toList());
+    }
 
+    public Result compareWith(PokerHand candidate) {
+        Result res = null;
+        Combination currentCombination = new Combination(this);
+        Combination candidateCombination = new Combination(candidate);
+
+        int resComp = currentCombination.compareTo(candidateCombination);
+        if ( resComp == 0) {
+            resComp = compareKickers(candidate.getKicker());
+        }
+        if (resComp == 0) {
+            res = Result.TIE;
+        } else if (resComp > 0) {
+            res = Result.WIN;
+        } else {
+            res = Result.LOSS;
+        }
+        return res;
+    }
+
+    /**
+     * Compare le kicker de la main courante avec un autre kicker
+     * @param candidateKicker
+     * @return
+     */
+    private int compareKickers(List<Card> candidateKicker) {
+        return Card.compareCards(getKicker(), candidateKicker);
+    }
 
 }

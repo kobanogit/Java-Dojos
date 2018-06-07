@@ -1,5 +1,8 @@
 package fr.wildcodeschool.poker;
 
+import java.util.Collections;
+import java.util.List;
+
 public class Card implements Comparable<Card> {
 
     private CardSuit suit;
@@ -45,10 +48,36 @@ public class Card implements Comparable<Card> {
 
     @Override
     public int compareTo(Card other) {
-        return other.getValue().getValue() - getValue().getValue();
+        return getValue().getValue() - other.getValue().getValue();
     }
 
     public String toString() {
         return this.getValue().name() + this.suit.name();
     }
+
+
+
+    /**
+     * Compare 2 listes de cartes
+     * @param refCards
+     * @param candidateCards
+     * @return
+     */
+    public static int compareCards(List<Card> refCards, List<Card> candidateCards) {
+        int res = 0;
+        Collections.sort(refCards);
+        Collections.sort(candidateCards);
+
+        Collections.reverse(refCards);
+        Collections.reverse(candidateCards);
+
+        for (int i = 0; i < refCards.size(); i++) {
+            res = refCards.get(i).compareTo(candidateCards.get(i));
+            if (res != 0) {
+                break;
+            }
+        }
+        return res;
+    }
+
 }

@@ -17,7 +17,7 @@ public enum CombinationType implements Comparable<CombinationType> {
 
     private int value = 0;
     private boolean sameSuit;
-    private List<Integer> sameValues;
+    private List<Integer> cardsRepetitions;
     private boolean sequenceValue;
 
 
@@ -28,7 +28,7 @@ public enum CombinationType implements Comparable<CombinationType> {
     CombinationType(int value, boolean sameSuit, Integer[] sameValues, boolean sequenceValue) {
         this.value = value;
         this.sameSuit = sameSuit;
-        this.sameValues = Arrays.asList(sameValues);
+        this.cardsRepetitions = Arrays.asList(sameValues);
         this.sequenceValue = sequenceValue;
     }
 
@@ -41,7 +41,7 @@ public enum CombinationType implements Comparable<CombinationType> {
         CombinationType bestCombination = null;
         int i = 0;
         boolean matched = false;
-        while (bestCombination == null && i < (allCombinations.size() - 1) ){
+        while (bestCombination == null && i <= (allCombinations.size() - 1) ){
             if (allCombinations.get(i).isMatched(hand)) {
                 bestCombination = allCombinations.get(i);
             }
@@ -56,7 +56,7 @@ public enum CombinationType implements Comparable<CombinationType> {
             match = false;
         } else if (this.isSequenceValue() && !isSequence(hand)) {
             match = false;
-        } else if (this.sameValues != null && !this.sameValues.isEmpty() && !isSameValue(hand)) {
+        } else if (this.cardsRepetitions != null && !this.cardsRepetitions.isEmpty() && !isSameRepetitions(hand)) {
             match = false;
         }
         return match;
@@ -75,18 +75,18 @@ public enum CombinationType implements Comparable<CombinationType> {
         return true;
     }
 
-    public boolean isSameValue(PokerHand hand) {
-        return isSameValue(hand.getCards());
+    public boolean isSameRepetitions(PokerHand hand) {
+        return isSameRepetitions(hand.getCards());
     }
 
-    public boolean isSameValue(List<Card> cards) {
+    public boolean isSameRepetitions(List<Card> cards) {
         List<List<Card>> allSameCards = getSameValueCards(cards);
         List<Integer> multiVals = new ArrayList<>();
         for (List<Card> sameCards: allSameCards) {
             multiVals.add(sameCards.size());
         }
 
-        List<Integer> sortedSameValues = new ArrayList(this.sameValues);
+        List<Integer> sortedSameValues = new ArrayList(this.cardsRepetitions);
         Collections.sort(sortedSameValues);
         Collections.sort(multiVals);
         boolean sameValsFound = false;
@@ -168,8 +168,8 @@ public enum CombinationType implements Comparable<CombinationType> {
         return sameSuit;
     }
 
-    public List<Integer> getSameValues() {
-        return sameValues;
+    public List<Integer> getCardsRepetitions() {
+        return cardsRepetitions;
     }
 
     public boolean isSequenceValue() {
@@ -181,6 +181,11 @@ public enum CombinationType implements Comparable<CombinationType> {
      * @return
      */
     public boolean isSameValueBased() {
-        return this.getSameValues() != null && !this.getSameValues().isEmpty();
+        return this.getCardsRepetitions() != null && !this.getCardsRepetitions().isEmpty();
+    }
+
+
+    public int compare(CombinationType candidate) {
+        return this.value - candidate.getValue();
     }
 }
